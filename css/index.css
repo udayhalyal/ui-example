@@ -79,31 +79,31 @@ b, strong{font-weight:600;}
 body.modal-open{overflow-y:hidden;}
 #navigation-top-scroll{display:none;}
 #navigation-top-scroll .pl-user-img img{width:42px;height:42px;}
-.cs-navbar{background:transparent;border-color:transparent;}
-.cs-navbar-scroll{background:#FFF;border-color:#C7C7C7;box-shadow:0 0 10px rgba(0, 0, 0, 0.34901960784313724);}
-.cs-navbar-scroll .navbar-brand{padding:7px 0;margin:0 !important;transition:.3s;}
-.cs-navbar-scroll .navbar-brand img{width:80px;transition:.3s;}
-.cs-navbar .navbar-collapse ul li a{color:#FFF;font-size:15px;letter-spacing:1.1px;padding:10px;font-weight:400;text-shadow:0 0 5px rgba(0, 0, 0, 0.3);}
-.cs-navbar .navbar-collapse ul.navbar-top li a{font-size:14px;font-weight:500;}
-.cs-navbar .navbar-collapse ul li a:hover,.cs-navbar .navbar-collapse ul li a:focus{color:#FFF;outline:0;}
-.cs-navbar .navbar-collapse ul li a i{color:#FFF;}
+.navbar{background:transparent;border-color:transparent;}
+.navbar-scroll{background:#FFF;border-color:#C7C7C7;box-shadow:0 0 10px rgba(0, 0, 0, 0.34901960784313724);}
+.navbar-scroll .navbar-brand{padding:7px 0;margin:0 !important;transition:.3s;}
+.navbar-scroll .navbar-brand img{width:80px;transition:.3s;}
+.navbar .navbar-collapse ul li a{color:#FFF;font-size:15px;letter-spacing:1.1px;padding:10px;font-weight:400;text-shadow:0 0 5px rgba(0, 0, 0, 0.3);}
+.navbar .navbar-collapse ul.navbar-top li a{font-size:14px;font-weight:500;}
+.navbar .navbar-collapse ul li a:hover,.navbar .navbar-collapse ul li a:focus{color:#FFF;outline:0;}
+.navbar .navbar-collapse ul li a i{color:#FFF;}
 .register{cursor:pointer;}
 
-
-.cs-navbar .navbar-collapse ul li a.select-lang{color:#1E1E1E;padding-top:10px;}
-.cs-navbar .navbar-collapse ul li a.signin{color:#f79548;background:#FFF;border-radius:50px;padding:2px 15px;margin-top:8px;text-shadow:none;cursor:pointer;font-weight:500;}
-.cs-navbar .navbar-collapse ul li a.register{color:#FFF;background:#265fc4;border-radius:50px;padding:2px 15px;margin-top:8px;margin-left:10px;text-shadow:none;font-weight:500;}
-.cs-navbar .navbar-collapse ul.nav2 li a.register{font-weight:500;padding:5px 15px;position:relative;top:-3px;}
-.cs-navbar .navbar-collapse ul li a.demoRequst{color:#265fc4;background:#FFF;border-radius:50px;padding:2px 15px;margin-top:8px;text-shadow:none;cursor:pointer;font-weight:500;margin-left:10px;padding-left:28px;}
-.cs-navbar .navbar-collapse ul li a.demoRequst::before{content:'';background:#265fc4 url(/ui_test/img/request-home-demo-icon.png) no-repeat;width:24px;height:24px;position:absolute;border-radius:50%;padding:9px;background-position:3px;background-size:17px;top:0px;left:0;}
-.cs-navbar .navbar-collapse ul li a.demoRequst:hover, .cs-navbar .navbar-collapse ul li a.demoRequst:focus{color:#265fc4;}
-.cs-navbar .navbar-collapse ul#navigation-top-scroll li a.demoRequst{color:#FFF;background:#265fc4;border:1px solid #265fc4;}
-.cs-navbar .navbar-collapse ul#navigation-top-scroll li a.demoRequst:hover{color:#FFF;background:#265fc4;}
+.navbar .navbar-collapse ul li a{color:#fff;}
+.navbar .navbar-collapse ul li a.select-lang{color:#1E1E1E;padding-top:10px;}
+.navbar .navbar-collapse ul li a.signin{color:#f79548;background:#FFF;border-radius:50px;padding:2px 15px;margin-top:8px;text-shadow:none;cursor:pointer;font-weight:500;}
+.navbar .navbar-collapse ul li a.register{color:#FFF;background:#265fc4;border-radius:50px;padding:2px 15px;margin-top:8px;margin-left:10px;text-shadow:none;font-weight:500;}
+.navbar .navbar-collapse ul.nav2 li a.register{font-weight:500;padding:5px 15px;position:relative;top:-3px;}
+.navbar .navbar-collapse ul li a.demoRequst{color:#265fc4;background:#FFF;border-radius:50px;padding:2px 15px;margin-top:8px;text-shadow:none;cursor:pointer;font-weight:500;margin-left:10px;padding-left:28px;}
+.navbar .navbar-collapse ul li a.demoRequst::before{content:'';background:#265fc4 url(/ui_test/img/request-home-demo-icon.png) no-repeat;width:24px;height:24px;position:absolute;border-radius:50%;padding:9px;background-position:3px;background-size:17px;top:0px;left:0;}
+.navbar .navbar-collapse ul li a.demoRequst:hover, .navbar .navbar-collapse ul li a.demoRequst:focus{color:#265fc4;}
+.navbar .navbar-collapse ul#navigation-top-scroll li a.demoRequst{color:#FFF;background:#265fc4;border:1px solid #265fc4;}
+.navbar .navbar-collapse ul#navigation-top-scroll li a.demoRequst:hover{color:#FFF;background:#265fc4;}
 nav.navbar-default{
 background: transparent;
 border-color:transparent;
 }
-.cs-navbar{background:transparent;border-color:transparent;}
+.navbar{background:transparent;border-color:transparent;}
 body.home_banner{background:url(/ui_test/img/top-bg.png) no-repeat;background-position:top right;background-size:865px;}
 #navbar:after{content:"";position:absolute;right:0;z-index:100;bottom:0;width:61%;height:1px;background:#FFF;}
 header .navbar-nav > li{padding:0;}
@@ -130,7 +130,7 @@ overflow-x: hidden;
     margin-top: 101px;
     background-size: cover;
 }
-#product-tab-bg{background:url('https://cdn.xtramarx.com/web_v1/images/website_v7/product-bg.png') no-repeat center top;min-height:600px;padding-top:404px;padding-bottom:217px;margin-top:-436px;background-size:cover;}
+#product-tab-bg{background:url('https://cdn.xtramarx.com/web_v1/images/website_v7/product-bg.png') no-repeat center top;min-height:600px;padding-top:404px;padding-bottom:217px;margin-top:-208px;background-size:cover;}
 .product-tab-content{width:350px;height:277px;overflow:hidden;padding:50px 120px 20px 30px;color:#fff;margin:0 auto;background:url('https://cdn.xtramarx.com/web_v1/images/website_v7/emproduct_sprite.png') no-repeat;}
 .product-tab-content h2{font-size:23px;}
 .product-tab-content.cap .cap_content{padding-right:140px;}
@@ -216,3 +216,56 @@ margin-bottom: 20px;
 @media screen and (max-width: 1366px){#features-section{margin-top: -500px;}}
 ul li a.signin{color:#f79548;background:#FFF;border-radius:50px;padding:2px 15px;margin-top:8px;text-shadow:none;cursor:pointer;font-weight:500;}
 ul li a.register{color:#FFF;background:#265fc4;border-radius:50px;padding:2px 15px;margin-top:8px;margin-left:10px;text-shadow:none;font-weight:500;}
+.navbar-scroll{background: #FFF !important;border-color: #C7C7C7 !important;box-shadow: 0 0 10px rgba(0, 0, 0, 0.34901960784313724);}
+.navbar-top-fixed{position: fixed;right: 0;left: 0;z-index: 11;}
+.navbar-scroll a.navbar-brand img{width: 80px;transition: .3s;}
+.navbar-scroll .navbar-brand{
+    margin: 0 !important;
+    transition: .3s;
+    z-index: 99999;
+    position: relative;
+    float: left;
+    height: 50px;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 0;    margin: 0;}
+.navbar-scroll .navbar-collapse ul#navigation-top-scroll li a{color: #f79649;
+    font-size: 14px;
+    font-weight: 500;
+    text-shadow: none;
+    letter-spacing: 1.1px;
+    padding: 10px;
+    position: relative;
+    display: block;
+}
+.navbar-scroll .navbar-collapse ul#navigation-top-scroll li a.signin{margin:0;border: 1px solid #fff;padding: 0;padding: 5px 11px;background-color: #f79649;color: #fff;margin-right: 10px;}
+.navbar-scroll .navbar-collapse ul#navigation-top-scroll li a.register{margin:0;padding: 5px 11px;}
+.navbar .navbar-header{margin-top: -15px;}
+.navbar-scroll .navbar-header{margin-top: 0px;}
+div.mobile-links,div.mobile-linksli{display:none;}
+@media only screen and (max-width: 640px){
+.navbar .navbar-header{margin-top:0;}
+.navbar .navbar-header a.navbar-brand{margin:0}
+.navbar .navbar-header a.navbar-brand img{width:80px;}
+body.home_banner{background-position: unset;}
+#product-tab-bg{margin-top: -234px;}
+nav.navbar{background: #FFF;
+    border-color: transparent;
+    top: 0;
+    border-width: 0 0 1px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+#features-section{margin-top:0;}
+ul.desktop-links li{display:none;}
+div.mobile-links,div.mobile-links li{display:block;padding: 5px 0px;}
+.navbar .navbar-collapse ul.navbar-top li a{color:#333;}
+.navbar .navbar-collapse ul li a.signin{background-color: #f79548;color: #fff;padding: 5px 10px;}
+.navbar .navbar-collapse ul li a.register{color: #fff;padding: 5px 10px;}
+ul#navigation-top{padding:0;}
+}
