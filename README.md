@@ -4,6 +4,6 @@
 
 ## This is been created using Pure HTML/CSS and JavaScript with some Math calculations
 
-You need to exatract the on Apache Server and Run below URL in browser
+You need to exatract slider branch files the on Apache Server and Run below URL in browser
 
 http://localhost/index.html
