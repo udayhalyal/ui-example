@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UI</title>
+
+    <link rel="stylesheet" href="assets/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/e_gmat.css">
+
+    <script src="assets/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <div class="container firstContainer">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <p class='header'>Quant</p>
+                        <div style="display: flex;">
+                            <label style="margin: 0 10px 0 0px;">Current</label>
+                            <input class="form-control input-value quantC" type="number" value="1" max="60">
+                            <label style="margin: 0 10px 0 10px;">Target</label>
+                            <input class="form-control input-value quantT" type="number" value="11">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <p class='header'>Verbal</p>
+                        <div style="display: flex;">
+                            <label style="margin: 0 10px 0 0px;">Current</label>
+                            <input class="form-control input-value verbalC" type="number" value="1">
+                            <label style="margin: 0 10px 0 10px;">Target</label>
+                            <input class="form-control input-value verbalT" type="number" value="11">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" style="margin-top: 10px;text-align: center;">
+                <button class="submitBtn" onclick="drawGraph();return false;">Submit and Refresh</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row firstRowDiv paddingSideBySide">
+            <div class="col-12">
+                <h5>Total Score</h5>
+                <div class="col-12 totalScoreDiv">
+                    <p></p>
+                </div>
+                <div class="rangeslider" id="totalScoreMainDiv">
+                    <input type="range" min="1" max="800" value="1" class="myslider_one" id="sliderRange_one">
+                    <input type="range" min="1" max="800" value="1" class="myslider_two" id="sliderRange_two">
+                    <span class="sliderRange_one"></span>
+                    <span class="sliderRange_two"></span>
+                    <span class="diff_range"></span>
+                    <div id="demo_one">
+                        <span id="demo_one_span"></span>
+                        <span class="arrow_icon"></span>
+                    </div>
+                    <div id="demo_two">
+                        <span id="demo_two_span"></span>
+                        <span class="arrow_icon"></span>
+                    </div>
+                    <p id="total_score_text">
+                        Your estimated GMAT score per your performance in this mock test is
+                        <span id='totalScore'></span>.
+                        Which is <span id="totalScoreSpan"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row secondRowDiv paddingSideBySide">
+            <div class='col-lg-4 col-md-4 col-sm-4 col-12'>
+                <h5>Quant Score</h5>
+                <div class="col-12 quantScoreDiv">
+                    <p></p>
+                </div>
+                <div class="rangeslider" id="quantScoreMainDiv">
+                    <input type="range" min="1" max="800" value="1" class="myslider_one" id="sliderRange_one">
+                    <input type="range" min="1" max="800" value="1" class="myslider_two" id="sliderRange_two">
+                    <span class="sliderRange_one"></span>
+                    <span class="sliderRange_two"></span>
+                    <span class="diff_range"></span>
+                    <div id="demo_one">
+                        <span id="demo_one_span"></span>
+                        <span class="arrow_icon"></span>
+                    </div>
+                    <div id="demo_two">
+                        <span id="demo_two_span"></span>
+                        <span class="arrow_icon"></span>
+                    </div>
+                    <p id="total_score_text">
+                        Your estimated Quantitative score as per your performance in this mock test is
+                        Q<span id='totalScore'></span>.
+                        Which is <span id="totalScoreSpan"></span>
+                    </p>
+                </div>
+            </div>
+            <div class='col-lg-1 col-md-1 col-sm-1 quantDotted'></div>
+            <div class='col-lg-1 col-md-1 col-sm-1 '></div>
+            <div class='col-lg-4 col-md-4 col-sm-4 col-12'>
+                <h5>Verbal Score</h5>
+                <div class="col-12 verbalScoreDiv">
+                    <p></p>
+                </div>
+                <div class="rangeslider" id="verbalScoreMainDiv">
+                    <input type="range" min="1" max="800" value="1" class="myslider_one" id="sliderRange_one">
+                    <input type="range" min="1" max="800" value="1" class="myslider_two" id="sliderRange_two">
+                    <span class="sliderRange_one"></span>
+                    <span class="sliderRange_two"></span>
+                    <span class="diff_range"></span>
+                    <div id="demo_one">
+                        <span id="demo_one_span"></span>
+                        <span class="arrow_icon"></span>
+                    </div>
+                    <div id="demo_two">
+                        <span id="demo_two_span"></span>
+                        <span class="arrow_icon"></span>
+                    </div>
+                    <p id="total_score_text">
+                        Your estimated Verbal score as per your performance in this mock test is
+                        V<span id='totalScore'></span>.
+                        Which is <span id="totalScoreSpan"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/e_gmat.js"></script>
+</html>
