@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Extramarks - The Learning App | CBSE, ICSE, NCERT Solution, JEE & NEET Preparation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Bootstrap 3 template for corporate business" />
+	<!-- css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="plugins/flexslider/flexslider.css" rel="stylesheet" media="screen" />
+	<link href="css/cubeportfolio.min.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+
+	<link href="css/index.css" rel="stylesheet" />
+
+	<!-- Theme skin -->
+	<link id="t-colors" href="skins/default.css" rel="stylesheet" />
+
+	<!-- boxed bg -->
+	<link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="home_banner">
+
+
+
+	<div id="wrapper">
+		<!-- start header -->
+		<header>
+			<nav id="navbar" class="navbar navbar-default navbar-fixed-top cs-navbar clearfix">
+				<div class="col-xs-12">
+					<div class="col-xs-1"></div>
+					<div class="col-xs-10">
+						<div class="navbar-header">
+							<a class="navbar-brand" href="index.html" style="margin-top: 0;padding: 15px;">
+								<img width="175px"
+									src="//s3cdn2.xtramarx.com/web_v1/images/website_v7/em-logo-black.png"
+									alt="Extramarks Logo" class="img-responsive">
+							</a>
+						</div>
+						<div class="navbar-collapse collapse">
+							<ul class="nav navbar-nav navbar-right navbar-top">
+								<li class="tel_no"><a href="tel:1800-102-5301"><i class="fa fa-phone"
+											aria-hidden="true"></i> 1800-102-5301</a></li>
+								<li><a class="signin" data-toggle="modal" data-target="#login-modal"
+										data-dismiss="modal">LOGIN</a></li>
+								<li><a class="register" onclick="showsignUpPage();">SIGN UP</a></li>
+								<li class="resp_menu_main advance-search-sec" style="display: none;">
+									<form name="searchForm" id="searchForm" method="post"
+										action="/websearch/search#search" class="search-form">
+										<input id="searchValue" maxlength="60" name="searchValue" type="text"
+											class="search-bar ui-autocomplete-input typeahead search-alert-msg"
+											autocomplete="off" placeholder="Please enter Keyword">
+										<!--<input id="search_submit" value="search" type="submit" class="arrows-icon search-btn-icon" onclick="return false;">-->
+										<span class="arrows-icon search-btn-icon"></span>
+										<div id="search-item-list" class="search-item-list" style=""></div>
+										<span class="search-error-msg" style="display: none;">Please enter
+											Keyword</span>
+									</form>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-1"></div>
+				</div>
+			</nav>
+			<nav id="navbar-main" class="navbar navbar-default cs-navbar hidden-xs"
+				style="margin-top: 50px;border: none;margin-bottom: 0;">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header" style="display:none;">
+						<button type="button" class="navbar-toggle toggle-nav collapsed" data-toggle="collapse"
+							data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+
+						<ul class="nav navbar-nav navbar-right nav2 mt5">
+							<li><a href="/achieve">Achieve</a></li>
+							<li><a href="/the-learning-app">Learning App</a></li>
+							<li><a href="/kids-learning">Kids Learning</a></li>
+							<li class="dropdown"><a href="#" data-toggle="dropdown">K-12 <i
+										class="fa fa-caret-down"></i></a>
+								<ul class="dropdown-menu school-board-class">
+									<li>
+										<div class="board_listing col-xs-4 col-sm-4">
+											<ul class="board-list study-board-listing">
+												<li><a href="javascript:void(0)" data-id="180" class="active">CBSE<i
+															class="arrows-icon board-right-arrow-icon"></i></a></li>
+												<li><a href="javascript:void(0)" data-id="343">CBSE Hindi<i
+															class="arrows-icon board-right-arrow-icon"></i></a></li>
+												<li><a href="javascript:void(0)" data-id="404">ICSE<i
+															class="arrows-icon board-right-arrow-icon"></i></a></li>
+												<li><a href="javascript:void(0)" data-id="183">AP Board<i
+															class="arrows-icon board-right-arrow-icon"></i></a></li>
+												<li><a href="javascript:void(0)" data-id="186">Tamilnadu Board<i
+															class="arrows-icon board-right-arrow-icon"></i></a></li>
+												<li><a href="javascript:void(0)" data-id="489">Karnataka<i
+															class="arrows-icon board-right-arrow-icon"></i></a></li>
+												<li><a href="javascript:void(0)" data-id="330">NDMC<i
+															class="arrows-icon board-right-arrow-icon"></i></a></li>
+												<li><a href="javascript:void(0)" data-id="337">एन.डी. एम.सी.(हिंदी
+														माध्यम)<i class="arrows-icon board-right-arrow-icon"></i></a>
+												</li>
+											</ul>
+										</div>
+										<div class="col-xs-8 col-sm-8 study-class-listing" id="study-class-listing">
+											<div class="col-sm-9">
+												<ul class="class-list">
+													<li><a href="javascript:void(0)" data-id="87143">Nursery</a></li>
+													<li><a href="javascript:void(0)" data-id="87163">KG</a></li>
+													<li><a href="javascript:void(0)" data-id="87183">I</a></li>
+													<li><a href="javascript:void(0)" data-id="87203">II</a></li>
+													<li><a href="javascript:void(0)" data-id="87223">III</a></li>
+													<li><a href="javascript:void(0)" data-id="87243">IV</a></li>
+													<li><a href="javascript:void(0)" data-id="87263">V</a></li>
+												</ul>
+											</div>
+											<div class="col-sm-3">
+												<ul class="class-list">
+													<li><a href="javascript:void(0)" data-id="32">VI</a></li>
+													<li><a href="javascript:void(0)" data-id="33">VII</a></li>
+													<li><a href="javascript:void(0)" data-id="34">VIII</a></li>
+													<li><a href="javascript:void(0)" data-id="35">IX</a></li>
+													<li><a href="javascript:void(0)" data-id="36">X</a></li>
+													<li><a href="javascript:void(0)" data-id="37">XI</a></li>
+													<li><a href="javascript:void(0)" data-id="38">XII</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown"><a href="#" data-toggle="dropdown">Test-Prep <i
+										class="fa fa-caret-down"></i></a>
+								<ul class="dropdown-menu test-prep">
+									<li>
+										<div class="board_listing col-xs-5 col-sm-5">
+											<ul class="board-list ">
+												<li><a href="javascript:void(0)" class="engineeringTabButton active"><i
+															class="arrows-icon board-right-arrow-icon"></i> JEE</a></li>
+												<li><a href="javascript:void(0)" class="medicalTabButton"><i
+															class="arrows-icon board-right-arrow-icon"></i> NEET</a>
+												</li>
+												<li><a href="/iit-jee-main-and-medical-entrance-coaching-center"
+														class=""><i class="arrows-icon board-right-arrow-icon"></i>
+														Coaching Center</a></li>
+												<li><a href="/educafe" class=""><i
+															class="arrows-icon board-right-arrow-icon"></i> Educafe</a>
+												</li>
+											</ul>
+										</div>
+										<div class="col-xs-7 col-sm-7 padd0 test-prep-subitem">
+											<div class="col-sm-12 test-prep-subitem-2 padd0">
+												<ul class="class-list-tp forEngineering">
+													<li><a href="/engineering" class="">About</a></li>
+													<li><a href="/jee-elaborate-test-series" class="">JEE Elaborate Test
+															Series</a></li>
+													<li><a href="/jee-short-term-test-series" class="">JEE Short Term
+															Test Series</a></li>
+													<li><a href="/jee-advanced-test-series" class="">JEE Advanced Test
+															Series</a></li>
+													<li><a href="/jee-main-crash-course" class="">JEE Main Crash
+															Course</a></li>
+													<li><a href="/jee-advanced-crash-course" class="">JEE Advanced Crash
+															Course</a></li>
+													<li><a href="/jee-1-year-course" class="">JEE One Year Course</a>
+													</li>
+												</ul>
+												<ul class="class-list-tp forMedical hidden">
+													<li><a href="/medical" class="">About</a></li>
+													<li><a href="/neet-test-series" class="">NEET Test Series</a></li>
+													<li><a href="/neet-crash-course" class="">NEET Crash Course</a></li>
+													<li><a href="/neet-1-year-course" class="">NEET One Year Course</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li><a href="/extramarks-school">School Solutions</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+		</header>
+		<section class="banner-tab">
+			<div id="da-slider" class="da-slider full-banner">
+				<div class="da-slide banner-left-content da-slide-current">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<div>
+									<h2>Learning is Fun <br> with Extramarks!</h2>
+									<h2 class="bannerk12-heading"><img class="banner-k12-logo"
+											src="//s3cdn2.xtramarx.com/web_v1/images/website_v7/k12-logo.png"
+											alt="Extramarks K-12 Logo"> The Learning App</h2>
+								</div>
+								<div class="da-link banner-link">
+									<a class="btn btn-banner orange" href="/package">BUY</a>
+									<a class="btn btn-banner blue" href="#" data-toggle="modal"
+										data-target="#app-download" data-dismiss="modal"><i class="fa fa-download"></i>
+										Download App</a>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<img src="//s3cdn2.xtramarx.com/web_v1/images/website_v7/banner-right-img-2.png"
+									class="img-responsive" alt="Extramarks Banner">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="da-slide banner-left-content" style="display: none;">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<div>
+									<h2>Learning is Fun <br> with Extramarks!</h2>
+									<h2 class="bannerk12-heading"><img class="banner-k12-logo"
+											src="//s3cdn2.xtramarx.com/web_v1/images/website_v7/k12-logo.png"
+											alt="Extramarks K-12 Logo"> The Learning App</h2>
+								</div>
+								<div class="da-link banner-link">
+									<a class="btn btn-banner orange" href="/package">BUY</a>
+									<a class="btn btn-banner blue" href="#" data-toggle="modal"
+										data-target="#app-download" data-dismiss="modal"><i class="fa fa-download"></i>
+										Download App</a>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<img src="//s3cdn2.xtramarx.com/web_v1/images/website_v7/banner-right-img-3.png"
+									class="img-responsive" alt="Extramarks Banner">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="product-tab-bg" class="full-banner" style="z-index:2; position: relative;">
+			<div class="container" style="position: relative">
+				<div class="col-xs-12 row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="product-tab-content testprep">
+							<h2>Test Prep</h2>
+							<p>Courses to prepare for competitive exams in online and offline mode. </p>
+							<a class="btn k12-btn yellow mt30" href="#">View Details</a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="product-tab-content coaching-center">
+							<h2>Coaching Center</h2>
+							<p>Courses to prepare for competitive exams in online and offline mode.. </p>
+							<a class="btn k12-btn yellow mt30" href="#">View Details</a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<div class="product-tab-content cap">
+							<div class="cap_content">
+								<h2>CAP</h2>
+								<p>Identify your true potential with Extramarks CAP. </p>
+								<div style="display: inline-flex;">
+									<a class="btn k12-btn yellow mt30" href="#">View Details</a>
+									<a class="btn k12-btn orange text-white mt30" href="#" data-toggle="modal"
+										data-target="#free-counseling">Free Expert Advise</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="lpt-section">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<img src="//s3cdn2.xtramarx.com/web_v1/images/website_v7/lpt_bg_img-2.png"
+							alt="Extrramarks Learn Practice Test Background" class="mt80" style="max-width:90%;">
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<div class="top-icon">
+							<img src="//s3cdn2.xtramarx.com/web_v1/images/website_v7/method-icon-idea.png"
+								alt="Extrramarks Method Icon" class="img-responsive">
+						</div>
+						<h2>The Power of Total Learning™</h2>
+						<p><strong>Extramarks Total Learning</strong> Ecosystem is a One-App-One-Solution for all
+							stakeholders – Students, Teachers and Parents . It allows students to access learning
+							solutions mapped to their curriculum at home, while simultaneously allowing parents and
+							teachers to track and evaluate the student’s performance.</p>
+						<p class="text-orange mt20"><strong>Highlights – </strong></p>
+						<ul class="linear-list mt20">
+							<li>Deep, immersive learning, based on the Learn-Practice-Test pedagogy</li>
+							<li>Promotes independent learning while maintaining continuity from
+								school to home</li>
+							<li>Ensures effective communication between all stakeholders</li>
+						</ul>
+						<p class="text-orange mt20 mb30"><strong>Extramarks Pedagogy is based on the three-pronged
+								approach of
+								Learn-Practice-Test (LPT)</strong></p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div
+						class="col-xs-12 col-sm-6 col-sm-offset-6 col-md-6 col-md-offset-6 col-lg-6 col-lg-offset-6 lpt-col">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg4">
+							<figure class="learn-home-icon"></figure>
+							<h4 class="text-orange mb15 mt15">LEARN</h4>
+							<p>Concept Learning through rich media</p>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg4">
+							<figure class="practice-home-icon"></figure>
+							<h4 class="text-orange mb15 mt15">PRACTICE</h4>
+							<p>Application of concepts through different tools</p>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg4">
+							<figure class="test-home-icon"></figure>
+							<h4 class="text-orange mb15 mt15">TEST</h4>
+							<p>Robust adaptive testing</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+	</div>
+	<!-- end header -->
+
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="plugins/flexslider/jquery.flexslider-min.js"></script>
+	<script src="plugins/flexslider/flexslider.config.js"></script>
+	<script src="js/jquery.appear.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/uisearch.js"></script>
+	<script src="js/jquery.cubeportfolio.min.js"></script>
+	<script src="js/google-code-prettify/prettify.js"></script>
+	<script src="js/animate.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="https://cdn.xtramarx.com/web_v1/js/website_v7/jquery.cslider.js"></script>
+	<script>
+		setTimeout(function () { $("#da-slider .da-slide").show(); }, 5100);
+
+		$(function () {
+			$('#da-slider').cslider({
+				bgincrement: 0, current: 0, autoplay: true, interval: 5000
+			});
+		});
+	</script>
+
+</body>
+
+</html>
