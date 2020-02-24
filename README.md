@@ -6,4 +6,4 @@
 
 You need to exatract the on Apache Server and Run below URL in browser
 
-Slider[http://localhost/index.html]
+Slider [http://localhost/index.html]
